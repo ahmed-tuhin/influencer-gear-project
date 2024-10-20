@@ -25,6 +25,7 @@ body{
    display: flex;
    justify-content: space-between;
    align-items: center;
+   margin-top: 25px;
 }
 
 .nav-title h3{
@@ -64,9 +65,49 @@ font-weight: 600;
 /* banner styles */
 .banner-container{
     max-width: 1440px;
-    height: 300px;
+   
     margin: 0 auto;
+    margin-top: 4rem;
     border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-text h1{
+    color: rgb(58, 58, 58);
+    width: 582px;
+    height: 133px;
+font-size: 52px;
+font-weight: 700;
+margin-bottom: 16px;
+padding-left: 1rem;
+}
+
+.banner-text p{
+    width: 505px;
+    color: rgb(58, 58, 58);
+font-size: 16px;
+font-weight: 600;
+margin-bottom: 16px;
+padding-left: 1rem;
+
+}
+.btn-primary{
+    border-radius: 41px;
+background: rgb(224, 44, 109);color: rgb(255, 255, 255);
+font-family: Poppins;
+font-size: 16px;
+font-weight: 700;
+padding: 10px 24px ;
+}
+#btn-primary{
+    padding-left: 1rem;
+}
+
+.banner-img img{
+    width: 100%;
+    
 }
 
 
@@ -88,4 +129,26 @@ height: 24px;
     display: none;
 }
 /* banner */
+.banner-container{
+    flex-direction: column-reverse;
+    margin-left: auto;
+}
+.banner-img img{
+    width: 75%;
+}
+.banner-text h1{
+    width: 95%;    
+margin-bottom: 16px;
+padding-left: 2rem;
+}
+
+.banner-text p{
+width: 321px;
+margin-bottom: 18px;
+padding-left: 2rem;
+}
+
+#btn-primary{
+    padding-left: 2rem;
+}
 }
